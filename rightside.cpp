@@ -75,7 +75,6 @@ void SureButton(char ch) {
 				if (xm >= 2*MAXW/3-32 && ym >= 280 && ym <= 300 && xm <= 2*MAXW/3+3) {
 					putrectangle(MAXW/3, MAXH/3, buffer);
 					free(buffer);
-					Beep(100, 30);
 					break;
 				}
 			}
