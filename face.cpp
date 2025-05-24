@@ -30,6 +30,8 @@ void Loading() {
 	readimagefile("Images\\loading3.bmp", 1.2*MAXW/8, 2*MAXH/8, 6.8*MAXW/8, 6*MAXH/8); delay(100);
 	readimagefile("Images\\loading4.bmp", 1.2*MAXW/8, 2*MAXH/8, 6.8*MAXW/8, 6*MAXH/8); delay(300);
 	readimagefile("Images\\loading5.bmp", 1.2*MAXW/8, 2*MAXH/8, 6.8*MAXW/8, 6*MAXH/8); delay(200);
+	readimagefile("Images\\loading6.bmp", 1.2*MAXW/8, 2*MAXH/8, 6.8*MAXW/8, 6*MAXH/8); delay(300);
+	readimagefile("Images\\loading7.bmp", 1.2*MAXW/8, 2*MAXH/8, 6.8*MAXW/8, 6*MAXH/8); delay(500);
 
 	setfillstyle(1, BLACK);
 	bar(0, 0, MAXW, MAXH);
