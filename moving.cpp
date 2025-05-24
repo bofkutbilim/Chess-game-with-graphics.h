@@ -7,47 +7,7 @@ bool LeftWhiteRookMoved, RightWhiteRookMoved;
 bool LeftBlackRookMoved, RightBlackRookMoved;
 
 void melody() {
-	Beep(329,30);
-	Beep(493,30);
-	Beep(698,30);
-	Beep(659,60);
-
-	Beep(783,30);
-	Beep(698,30);
-	Beep(659,60);
-
-	Beep(329,10);
-	Beep(493,30);
-	Beep(698,30);
-	Beep(659,60);
-
-	Beep(392,25);
-	Beep(440,20);
-	Beep(587,30);
-
-	Beep(349,25);
-	Beep(587,50);
-
-	Beep(329,30);
-	Beep(493,30);
-	Beep(698,30);
-	Beep(659,60);
-
-	Beep(783,30);
-	Beep(698,30);
-	Beep(659,60);
-
-	Beep(329,10);
-	Beep(493,30);
-	Beep(698,30);
-	Beep(659,60);
-
-	Beep(392,25);
-	Beep(440,20);
-	Beep(587,30);
-
-	Beep(349,25);
-	Beep(587,40);
+	
 }
 
 void Result(char * file) {
@@ -187,12 +147,11 @@ void Moving(int ti, int tj) {
 	if (REZHIM < 2) {
 		if (CheckKing('w')) {
 			if (!CanMoveAnywhere('w')) {
-				Result("Images\\blackwins.bmp");
+				Result("Images\\blackwin.bmp");
 				REZHIM = -1;
 			} else {
 				WriteCheckToWhite();
 				checkw = true;
-				Beep(100, 600);
 			}
 		} else {
 			if (!CanMoveAnywhere('w')) {
@@ -206,12 +165,11 @@ void Moving(int ti, int tj) {
 	} else {
 		if (CheckKing('b')) {
 			if (!CanMoveAnywhere('b')) {
-				Result("Images\\whitewins.bmp");
+				Result("Images\\whitewin.bmp");
 				REZHIM = -1;
 			} else {
 				WriteCheckToBlack();
 				checkb = true;
-				Beep(100, 600);
 			}
 		} else {
 			if (!CanMoveAnywhere('b')) {
